@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <title>Computer and things</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="row">
+        <div class="cart-title col-xs-12">
+          <h1>
+            Shopping Cart
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section id="item-list" class="container">
+      <div class="row item">
+        <div class="item-name col-xs-1">
+          <img class="image-fluid"  src="./Images/gpu.jpg">
+        </div>
+        <div class="item-name col-xs-2">
+          GPU
+        </div>
+        <div class="item-price col-xs-3">
+          $1500.00
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity" placeholder="0" type="number" min="0">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+          $--.--
+        </div>
+      </div>
+      <div class="row item">
+        <div class="item-name col-xs-1">
+          <img class="image-fluid"  src="./Images/hdd.jpg">
+        </div>
+        <div class="item-name col-xs-2">
+          Hard drive
+        </div>
+        <div class="item-price col-xs-3">
+          $200.00
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity" placeholder="0" type="number" min="0">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+          $--.--
+        </div>
+      </div>
+      <div class="row item">
+        <div class="item-name col-xs-1">
+          <img class="image-fluid"  src="./Images/gpu.jpg">
+        </div>
+        <div class="item-name col-xs-2">
+          Fans
+        </div>
+        <div class="item-price col-xs-3">
+          $300.00
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity" placeholder="0" type="number" min="0">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+          $--.--
+        </div>
+      </div>
+      <div class="row item">
+        <div class="item-name col-xs-1">
+          <img class="image-fluid"  src="./Images/motherboard.jpg">
+        </div>
+        <div class="item-name col-xs-2">
+          Motherboard
+        </div>
+        <div class="item-price col-xs-3">
+          $250.00
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity" placeholder="0" type="number" min="0">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+          $--.--
+        </div>
+      </div>
+      <div class="row item">
+        <div class="item-name col-xs-1">
+          <img class="image-fluid"  src="./Images/ram.jpg">
+        </div>
+        <div class="item-name col-xs-2">
+          Ram
+        </div>
+        <div class="item-price col-xs-3">
+          $150.00
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity" placeholder="0" type="number" min="0">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+          $--.--
+        </div>
+      </div>
+      <div class="row item">
+        <div class="item-name col-xs-1">
+          <img class="image-fluid"  src="./Images/cpu.jpg">
+        </div>
+        <div class="item-name col-xs-2">
+          CPU
+        </div>
+        <div class="item-price col-xs-3">
+          $500.00
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity" placeholder="0" type="number" min="0">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+          $--.--
+        </div>
+      </div>
+      <div class="row item new">
+        <div class="col-xs-3">
+          <input placeholder="Parts" id="name">
+        </div>
+        <div class="col-xs-3">
+          <input placeholder="3000" id="cost">
+        </div>
+        <div class="col-xs-1">
+          <button id="fork">
+            Add
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="total-price-label">
+            Total Price:
+          </h1>
+          <div id="total-price">
+            $--.--
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </body>
+</html>
